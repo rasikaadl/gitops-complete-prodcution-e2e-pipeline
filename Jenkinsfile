@@ -3,7 +3,7 @@ pipeline {
         label "jenkins-agent"
     }
     environment {
-        APP_NAME = "complete-prodcution-e2e-pipeline"
+        APP_NAME = "project-1-application"
     }
 
     stages {
@@ -16,7 +16,7 @@ pipeline {
     
         stage("Checkout from SCM") {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/rasikaadl/gitops-complete-prodcution-e2e-pipeline'
+                git branch: 'main', credentialsId: 'github-access-token', url: 'https://github.com/rasikaadl/project-1-devops'
             }
         }
     
@@ -40,8 +40,8 @@ pipeline {
                     git add deployment.yaml
                     git commit -m "Updated Deployment Manifest"
                 """
-                withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
-                    sh "git push https://github.com/rasikaadl/gitops-complete-prodcution-e2e-pipeline main"
+                withCredentials([gitUsernamePassword(credentialsId: 'github-access-token', gitToolName: 'Default')]) {
+                    sh "git push https://github.com/rasikaadl/project-1-devops main"
                 }
             }
         }
