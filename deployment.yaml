@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: complete-prodcution-e2e-app
-          image: lfreez123/complete-prodcution-e2e-pipeline:1.0.0-35
+          image: lfreez123/project-1-application:latest
           resources:
             limits:
               memory: "256Mi"
