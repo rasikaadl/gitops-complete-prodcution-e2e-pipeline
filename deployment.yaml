@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: complete-prodcution-e2e-deployment
+  name: project-1-application-deployment
 spec:
-  replicas: 4
+  replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: complete-prodcution-e2e-app
+      app: project-1-application
   template:
     metadata:
       labels:
-        app: complete-prodcution-e2e-app
+        app: project-1-application
     spec:
       containers:
-        - name: complete-prodcution-e2e-app
+        - name: project-1-application
           image: lfreez123/project-1-application:latest
           resources:
             limits:
