@@ -14,7 +14,7 @@ spec:
         app: project-1-application
     spec:
       containers:
-        - name: project-1-application:1.0.0-15
+        - name: project-1-application
           image: lfreez123/project-1-application:1.0.0-15
           resources:
             limits:
