@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: project-1-application
-          image: lfreez123/project-1-application:latest
+          image: lfreez123/project-1-application:1.0.0-9
           resources:
             limits:
               memory: "256Mi"
