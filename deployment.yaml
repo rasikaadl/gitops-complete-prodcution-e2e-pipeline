@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: project-1-application:1.0.0-16
+  name: project-1-application
 spec:
   replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: project-1-application:1.0.0-16
+      app: project-1-application
   template:
     metadata:
       labels:
-        app: project-1-application:1.0.0-16
+        app: project-1-application
     spec:
       containers:
-        - name: project-1-application:1.0.0-16
+        - name: project-1-application
           image: lfreez123/project-1-application:1.0.0-16
           resources:
             limits:
