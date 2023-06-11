@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: project-1-application:1.0.0-15
+        app: project-1-application
     spec:
       containers:
         - name: project-1-application:1.0.0-15
