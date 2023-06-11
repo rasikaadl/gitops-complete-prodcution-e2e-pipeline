@@ -7,7 +7,7 @@ spec:
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: project-1-application:1.0.0-15
+      app: project-1-application
   template:
     metadata:
       labels:
