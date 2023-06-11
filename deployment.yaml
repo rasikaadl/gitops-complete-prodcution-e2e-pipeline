@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: project-1-application:1.0.0-15
+  name: project-1-application
 spec:
   replicas: 1
   revisionHistoryLimit: 5
